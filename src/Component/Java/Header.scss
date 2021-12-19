@@ -1,0 +1,569 @@
+@import '../../Variable.scss';
+
+
+.Header{
+    display: flex;
+    z-index: 11;
+    border-radius: 0;
+    background-color: $white-color;
+                border: 1px solid rgb(219, 213, 213);
+                position: relative;
+    max-width: 100%;
+    position: sticky;
+    top: 0;
+    justify-content: center;
+    :any-link{
+        text-decoration: none
+    }
+     .HeaderManager.Manager{
+      @include display(space-between,none,98%,none);
+      padding: 1.5rem  0;
+      
+      
+    //header controler
+             .Header-controller{
+                 width: 15%;
+
+        font-size: 2rem;
+        display: flex;
+        .Header-logo{
+            width: 100%;
+            display: flex;
+        a{
+            width: 100%;
+
+        display: flex;
+        font-size: 3rem;
+         &>.logo-icon{
+             color: $logo-icon;
+             margin-right: 1rem
+
+         };
+         &>.logo-text{
+             font-family: $fredoka400;
+             color: $logo-color;
+         }
+        }
+
+        }
+             }
+    // header controller end
+
+    
+    // input-section
+             .Input-Section{
+        display: flex;
+        width: 30%;
+
+      .search-controller{
+          @include display(flex-start,none,100%,none);
+border-radius: 2.5rem;
+background-color: $search-back;
+          .search-icon{
+              width: 11%;
+            font-size: 2rem;
+            text-align: center;
+background-color: $search-back;
+display: flex;
+            justify-content: center;
+            align-items: center;
+             border-radius: 2rem;
+             i{
+                 color: #888;
+             }
+
+          }
+          .search-box{
+background-color: $search-back;
+border-radius: 2rem;
+width: 85%;
+              input[type="text"]{
+              border-radius: 2rem;
+              width: 100%;
+              padding: 1rem 0;
+              border: none;
+background-color: $search-back;
+outline: none;
+              font-family: $mont400-900;
+              padding-left: 1.5rem;
+              font-size: 2rem;
+              font-weight: 500;
+
+              }
+          }
+      }
+             }
+    // input-section
+
+    // menu-sections
+             .menu-section{
+        width: 25%;
+        display: flex;
+        .menu-manager{
+            display: flex;
+            width: 100%;
+            .menu-controller{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                .menu-icon{
+                    width: 24%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    a{
+                        width: 100%;
+                        .menu-circle{
+                            width: 4.8rem;
+                            height: 4.8rem;
+                            border-radius: 50%;
+                            background-color: $square-icon;
+                            display: flex;
+                            justify-content: center;
+                            text-align: center;
+                            align-items: center;
+                            i{
+                                color: #adb5bd;
+                                font-size: 2.5rem;
+                            }
+                        }
+                    }
+                }
+                .menu-icon1{
+                    a{
+                        .menu-circle>i{
+                            color: #05f;
+                        }
+                    }
+                }
+
+            }
+        }
+
+             }
+    // menu-section
+
+
+    // setting-section
+             .setting-section{
+        display: flex;
+        width: 20%;
+                 .setting-manager{
+                     width: 100%;
+                     display: flex;
+                 }
+
+            .setting-manager>.setting-controller {
+               
+width: 100%;
+display: flex;
+                justify-content: center;
+                .setting-icon{
+                    width: 24%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    a{
+                        width: 100%;
+                        .setting-circle{
+                            width: 100%;
+                            i{
+                                font-size: 2.5rem;
+                                color: #05f;
+                            }
+                        }
+                    }
+                }
+                .setting-icon.set-icon3{
+                    width: 24%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    a{
+                        width: 100%;
+
+                        .setting-circle{
+                        width: 100%;
+
+                            
+                                transition: all 0.7s linear;
+                                animation: motion 2s linear infinite ;
+                            
+                         
+                        }
+                        @keyframes motion {
+                            from{
+                                transform: rotate(0);
+                            }
+                            to{
+                                transform: rotate(360deg);
+                            }
+                               
+                           }
+                    }
+                }
+
+            }
+        
+             }
+    // setting-section
+
+
+    // hideen-sectting
+             .hd-setting{
+                 display: none;
+        .hd-manaager{
+            width: 100%;
+            display: flex;
+            .hd-controller{
+                display: flex;
+                width: 100%;
+            }
+        }
+             }
+  
+
+      }
+    
+}
+.I-M-Parent{
+    max-width: 100%;
+    display: flex;
+ position: relative;
+background-color: #fbfcfe;
+    flex-direction: column;
+    .Care-Taker{
+        width: 100%;
+              padding-bottom: 2rem;
+        display: flex;
+        position: relative;
+        background-color: #fbfcfe;
+        justify-content: space-between;
+       .parent-left{
+           width: min(27rem);
+           padding: 0 1rem;
+          position:sticky;
+          z-index: 1;
+           display: flex;
+           top: 0;
+           flex-shrink: 0;
+        //   border: 2px solid orange;
+          align-self: flex-start;
+     
+       }
+       .parent-right{
+           margin-left: 2rem;
+           width: 76%;
+        //    border: 2px solid green;
+        display: flex;
+           display: flex;
+           .sub-left{
+               width: 68.6%;
+            //    border: 2px solid orange;
+           }
+           .sub-right{
+               width: 26.4%;
+               margin-left: 1rem;
+           }
+       }
+    }
+    .app-menu-bar{
+        width: 100%;
+        display: flex;
+
+    }
+}
+@media screen and (max-width:1200px) {
+    .Header{
+        .HeaderManager.Manager{
+            justify-content: space-between;
+                .menu-section{
+                    display: none;
+                }
+        }
+    }
+    .I-M-Parent{
+        .Care-Taker{
+.parent-right{
+    justify-content: space-between;
+    .sub-right{
+        margin: 0;
+        width: 30%;
+    }
+    .sub-left{
+        width: 70%;
+    }
+}
+        }
+    }
+}
+@media screen and (max-width:990px) {
+    .Header{
+        position: sticky;
+        top: 0;
+        z-index: 111;
+        .HeaderManager.Manager{
+            .Input-Section,
+            .setting-section{
+                display: none;
+            }
+            .hd-setting{
+                display: flex;
+                width: 25%;
+                .hd-manaager{
+                    width: 100%;
+                    display: flex;
+                    .hd-controller{
+                       display: flex;
+                       justify-content: space-between;
+                       .hd-icons{
+                           width: 24%;
+                           display: flex;
+                           a{
+                               width: 100%;
+                               .hide-circle{
+                                   width: calc(3.2rem + 0.61vw);
+                                   height: calc(3.2rem + 0.61vh);
+                                   border: 1px solid rgb(219, 218, 216);
+                                   background-color: #fcfafa;
+                                   border-radius: 50%;
+                                   display: flex;
+                                   align-items: center;
+                                   justify-content: center;
+                                   i{
+                                   font-size: calc(0.6rem + 1vw);
+
+                                   }
+                               }
+                           }
+                       }
+                       .hd-icn4{
+                           background-color: #fff;
+                           display: flex;
+                           .hide-circle{
+                        //    border: 1px solid orange;
+                           display: flex;
+                           background-color: #fff;
+                           width: 100%;
+                           justify-content: center;
+                           .fab-btn{
+                           background-color: #fff;
+
+                               width: 90%;
+                               position: relative;
+                            //    border: 1px solid rgb(15, 209, 112);
+                            border: none;
+                            outline: none;
+                           }
+                           .fab-btn::before{
+                               content: '';
+                               position: absolute;
+                               top: 22%;
+                               width: 65%;
+                               right: 0;
+                               border: 1px solid #111;
+                           }
+                           .fab-btn::after{
+                            content: '';
+                            position: absolute;
+                            width: 45%;
+                            top: 52%;
+                            right: 0;
+                            border: 1px solid #111;
+                        }
+                               
+                           }
+                       }
+                    }
+                }
+                
+            }
+            .Header-controller{
+                width: 20%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                font-size: calc(2rem + 1vw);
+            }
+            
+        }
+    }
+    .I-M-Parent{
+        .Care-Taker{
+            .parent-left{
+                display: none;
+            }
+            .parent-right{
+                width: 100%;
+                margin: 0;
+                padding: 0 1.5rem;
+                .sub-right{
+                    display: none;
+                }
+                .sub-left{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:690px) {
+    .Header{
+     
+        .HeaderManager.Manager{
+            // border: 1px solid orange;
+            
+            .hd-setting{
+                display: flex;
+                width: 33%;
+                .hd-manaager{
+                    width: 100%;
+                    display: flex;
+                    .hd-controller{
+                       display: flex;
+                       justify-content: space-between;
+                       .hd-icons{
+                           width: 24%;
+                           display: flex;
+                           a{
+                               width: 100%;
+                               .hide-circle{
+                                   width: calc(3.5rem + 1vw);
+                                   height: calc(3.5rem + 1vh);
+                                   border-radius: 50%;
+                                   display: flex;
+                                   align-items: center;
+                                   justify-content: center;
+                                   i{
+                font-size: calc(1rem + 1vw);
+
+                                   }
+                               }
+                           }
+                       }
+                    }
+                }
+                
+            }
+            .Header-controller{
+                width: 30%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                font-size: calc(2rem + 1vw);
+            }
+            
+        }
+    }
+    
+}
+@media screen and (max-width:440px) {
+    .Header{
+     
+        .HeaderManager.Manager{
+            // border: 1px solid orange;
+            
+            .hd-setting{
+                display: flex;
+                width: 46%;
+                .hd-manaager{
+                    width: 100%;
+                    display: flex;
+                    .hd-controller{
+                       display: flex;
+                       justify-content: space-between;
+                       .hd-icons{
+                           width: 24%;
+                           display: flex;
+                           a{
+                               width: 100%;
+                               .hide-circle{
+                                   width: calc(3.5rem + 1vw);
+                                   height: calc(3.5rem + 1vh);
+                                   border-radius: 50%;
+                                   display: flex;
+                                   align-items: center;
+                                   justify-content: center;
+                                   i{
+                font-size: calc(1.1rem + 1vw);
+
+                                   }
+                               }
+                           }
+                       }
+                    }
+                }
+                
+            }
+            .Header-controller{
+                width: 42%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                font-size: calc(2rem + 1vw);
+            }
+            
+        }
+    }
+    
+}
+@media screen and (max-width:288px) {
+    .Header{
+     
+        .HeaderManager.Manager{
+            
+            .hd-setting{
+                display: flex;
+                width: 55%;
+                .hd-manaager{
+                    width: 100%;
+                    display: flex;
+                    .hd-controller{
+                       display: flex;
+                       justify-content: space-between;
+                       .hd-icons{
+                           width: 24%;
+                           display: flex;
+                           a{
+                               width: 100%;
+                               .hide-circle{
+                                   width: calc(3.5rem + 1vw);
+                                   height: calc(3.5rem + 1vh);
+                                   border-radius: 50%;
+                                   display: flex;
+                                   align-items: center;
+                                   justify-content: center;
+                                   i{
+                font-size: calc(1.1rem + 1vw);
+
+                                   }
+                               }
+                           }
+                       }
+                    }
+                }
+                
+            }
+            .Header-controller{
+                width: 45%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                font-size: calc(1.9rem + 1vw);
+                .Header-logo{
+                    a{
+                font-size: calc(2.1rem + 1vw);
+                &>.logo-icon{
+                    margin-right: 0.5rem
+       
+                };
+                    }
+                }
+            }
+            
+        }
+    }
+}
+// write media query for 285px if you want otherwise all icon will collapse

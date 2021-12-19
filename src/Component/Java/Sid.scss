@@ -1,0 +1,39 @@
+.hema{
+    width: 20%;
+    position: relative;
+    display: flex;
+    position: absolute;
+    top: 0;
+    border: 2px solid orange;
+    .ramp{
+        display: flex;
+        border: 2px solid orange;
+        width: 100%;
+        height: 30rem;
+        padding: 0.5rem;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        // scroll-snap-type: mandatory;
+        // // scrollbar-width: none;
+        // scroll-snap-align: start;
+    }
+    // .ramp::-webkit-scrollbar{
+    //     width: 2rem;
+    // }
+    .ramp::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(184, 179, 179, 0.3);
+	background-color: #F5F5F5;
+}
+
+.ramp::-webkit-scrollbar
+{
+	width: 3px;
+	background-color: #F5F5F5;
+}
+
+.ramp::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+}

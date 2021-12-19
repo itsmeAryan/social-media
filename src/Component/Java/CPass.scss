@@ -1,0 +1,88 @@
+@import '../../Variable.scss';
+
+
+.CPass{
+    width: 100%;
+    display: flex;
+    .Changep-controller{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        .cpass-title{
+            width: 100%;
+            padding: 2rem 1rem;
+            background-color: #05f;
+            display: flex;
+            .change-passd{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                .arrowdf{
+                    width: 100%;
+                    border: 2px solid orange;
+                    i{
+                        font-size: 2rem;
+                        color: #fff;
+                    }
+                }
+                .text{
+                    font-size: 1.8rem;
+                    font-family: $Roboto400-900;
+                    font-weight: 600;
+                    color: #fff;
+                    text-transform: capitalize;
+                }
+            }
+        }
+        .pass-form{
+            width: 100%;
+            display: flex;
+            padding:1rem 3rem;
+            flex-direction: column;
+            .form-inpo{
+                display: flex;
+            margin: 01.5rem;
+
+                flex-direction: column;
+                width: 100%;
+                .form-label{
+                    font-size: 1.5rem;
+                    font-family: $mont400-900;
+                    font-weight: 400;
+                }
+                .form-input{
+                    margin-top: 1rem;
+                    width: 100%;
+                    border: 1px solid #111;
+                    display: flex;
+                    input[type="text"]{
+                        width: 100%;
+                        border: none;
+                        outline: none;
+                        padding: 1.5rem 0;
+                        padding-left: 1.5rem;
+                        font-family: $open400-800;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .Save-pass{
+            width: 100%;
+            display: flex;
+            padding: 1rem 3rem;
+            .save-mel{
+                padding: 1rem 4rem;
+                font-size: 1.8rem;
+                font-family: $Roboto400-900;
+                font-weight: 600;
+                background-color: #05f;
+                color: #fff;
+                cursor: pointer;
+            }
+            .save-mel:hover{
+                opacity: 0.9;
+            }
+        }
+    }
+}

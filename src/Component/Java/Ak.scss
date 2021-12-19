@@ -1,0 +1,21 @@
+.Ak{
+    max-width: 100%;
+    border: 2px solid orange;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    .Ak-controller{
+        width: 80%;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        // flex-wrap: nowrap;
+        .demo{
+            width: 100%;
+            border: 2px solid green;
+            padding: 2rem;
+        }
+    }
+    
+}

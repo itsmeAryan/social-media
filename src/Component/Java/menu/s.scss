@@ -1,0 +1,207 @@
+
+// user posted data
+
+    // follow people
+.follow-people{
+    display: flex;
+    width: 100%;
+    // border: 1px solid aqua;
+    margin: 1rem 0;
+    .fllow-container{
+        width: 100%;
+        display: flex;
+        padding:0 0.7rem;
+        .fllow-list{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .follow-item{
+                width: 24%;
+                padding-top: 1.5rem;
+
+                background-color: #fff;
+                box-shadow: 0 0 0.09rem rgba($color: #000000, $alpha: 0.76450);
+                // border: 2px solid orange;
+                display: flex;
+                flex-direction: column;
+                .follow-img{
+                    width: 100%;
+                    padding: 0.4rem;
+                    display: flex;
+                    .web-kl{
+                        display: flex;
+                        width: 100%;
+                        justify-content: center;
+                        align-content: center;
+                        align-items: center;
+                        img{
+                           height: 7rem;
+                            width: 7rem;
+                            object-fit: cover;
+                        }
+                    }
+                }
+                .follo-name{
+                    display: flex;
+                    width: 100%;
+                    padding: 0.7rem;
+                    flex-direction: column;
+                    .name-kl{
+                        font-size: 1.8rem;
+                        font-size: $Roboto400-900;
+                        font-weight: 500;
+                        padding: 0.4rem;
+                        width: 100%;
+                        text-align: center;
+                    }
+                    .user-name{
+                        width: 100%;
+                        text-align: center;
+                        font-family: $mont400-900;
+                        color: $text-color;
+                        font-size: 1.3rem;
+                    }
+                }
+                .follow-btn{
+                    width: 100%;
+                    display: flex;
+                    margin-top: 0.7rem;
+                    justify-content: center;
+                    padding-bottom: 1.5rem;
+                    .follow{
+                        padding: 0.4rem 2.5rem;
+                        font-size: 1.7rem;
+                    border-radius: 0.8rem;
+
+                        background-color: #34de8a;
+                        color: #fff;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+                    .follow:hover{
+                        opacity: 0.9;
+                    }
+                }
+            }
+        }
+    }
+}
+// live call with people
+.Live-chat{
+    display: flex;
+    width: 100%;
+    // border: 1px solid aqua;
+    margin: 1rem 0;
+    .Live-container{
+     display: flex;
+     width: 100%;
+     padding:0 0.7rem;
+
+     .live-list{
+         display: flex;
+         width: 100%;
+         justify-content: space-between;
+         .Live-items{
+             width: 30%;
+             display: flex;
+             margin: 0.7rem;
+            //  border: 2px solid orange;
+            box-shadow: 0 0 0.1rem rgba($color: #000000, $alpha: 0.76450);
+             border-radius: 0.7rem;
+             flex-direction: column;
+             .Live-back{
+                 width: 100%;
+                 display: flex;
+                 flex-direction: column;
+             border-radius: 0.7rem;
+
+                 position: relative;
+                 padding-bottom: 2rem;
+                 .live-backgr{
+                     width: 100%;
+                     display: flex;
+             border-radius: 0.7rem;
+             border-bottom-right-radius: 0;
+             border-bottom-left-radius: 0;
+             height: 10rem;
+                     position: relative;
+                     img{
+             border-radius: 0.7rem;
+             border-bottom-right-radius: 0;
+             border-bottom-left-radius: 0;
+                         width: 100%;
+                         object-fit: cover;
+
+                     }
+                 }
+                 .Live-user{
+                     width: 100%;
+                     display: flex;
+                     position: absolute;
+                     bottom: 0;
+                     justify-content: center;
+                     align-items: center;
+                     .use-circle90{
+                         width: 6.5rem;
+                         height: 6.5rem;
+                         border-radius: 50%;
+                         display: flex;
+                         justify-content: center;
+                         align-items: center;
+                         padding: 0.2rem;
+                         background-color: #fff;
+                         text-align: center;
+                        //  border: 1px solid orange;
+                         img{
+                             width: 100%;
+                             object-fit: cover;
+                         }
+                     }
+                 }
+             }
+             .live-uso-name{
+                display: flex;
+                    width: 100%;
+                    flex-direction: column;
+                    .uso-name-kl{
+                        font-size: 1.8rem;
+                        font-size: $Roboto400-900;
+                        font-weight: 500;
+                        width: 100%;
+                        text-align: center;
+                    }
+                    .use-name{
+                        width: 100%;
+                        text-align: center;
+                        font-size: 1.3rem;
+                        font-family: $mont400-900;
+                        color: $text-color;
+                    }
+             }
+             .live-btn{
+                 width: 100%;
+                 margin-top: 0.7rem;
+                 display: flex;
+                 padding-bottom: 2rem;
+
+                 justify-content: center;
+                 .live-now{
+                    padding: 0.4rem 2rem;
+                    font-size: 1.7rem;
+                    border-radius: 0.8rem;
+                    background-color: #e52511;
+                    color: #fff;
+                    text-align: center;
+                    cursor: pointer;
+                }
+                .live-now:hover{
+                    opacity: 0.9;
+                }
+                 }
+             }
+            .live-hide{
+                display: none;
+            }
+         }
+     }
+    }

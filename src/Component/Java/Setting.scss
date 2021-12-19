@@ -1,0 +1,92 @@
+@import '../../Variable.scss';
+
+.Setting{
+    width: 100%;
+    display: flex;
+    .Setting-controller{
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        .Setting-title{
+            width: 100%;
+            padding: 0.6rem;
+            .text{
+                font-size: 3rem;
+                text-transform: capitalize;
+            font-family: $Roboto400-900;
+            font-weight: 600;
+            }
+        }
+        .Setting-box{
+            display: flex;
+            width: 100%;
+            padding-bottom: 1rem;
+            margin: 0.5rem;
+            flex-direction: column;
+            .setting-name{
+                width: 100%;
+                .text{
+                    font-size: 1.5rem;
+                    font-family: $open400-800;
+                    text-transform: capitalize;
+                    color: $text-color;
+                }
+            }
+            .set-items{
+                margin: 0.6rem;
+                display: flex;
+                border-bottom: 2px solid rgb(230, 226, 226);
+                align-items: center;
+                width: 100%;
+                padding: 0.9rem;
+                .setting-icon{
+                    width: 50%;
+                    display: flex;
+                    .setting-circle{
+                        width: 14%;
+                        .icon-img{
+                            width: 4.4rem;
+                            height: 4.4rem;
+                            border-radius: 50%;
+                            display: flex;
+                            background-color: #0f77ff;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                            i{
+                                font-size: 1.9rem;
+                                text-decoration: none;
+                                color: #fff;
+                            }
+                        }
+                    }
+                    .Set-0pro{
+                        width: 30%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 1.8rem;
+                        text-transform: capitalize;
+                        font-family: $Roboto400-900;
+                        font-weight: 800;
+                    }
+                }
+                .sett-link{
+                    display: flex;
+                    width: 50%;
+                    justify-content: flex-end;
+                    a{
+                        padding-right: 2rem;
+                        i{
+                            font-size: 2.53rem;
+                            text-decoration: none;
+                            color: rgb(128, 128, 128);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

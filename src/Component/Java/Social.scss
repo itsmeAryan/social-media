@@ -1,0 +1,141 @@
+@import '../../Variable.scss';
+$fredoka400: 'Fredoka One', cursive;
+$mont400-900: 'Montserrat', sans-serif;
+$open400-800: 'Open Sans', sans-serif;
+$Roboto400-900: 'Roboto', sans-serif;
+$white-color:#ffffff;
+$logo-color:#1458ff;
+$logo-icon:#34de8a;
+$search-back:#eeeeee;
+$square-icon:#e6e8ea;
+$icon-colo:#05f;
+$text-color:#888;
+$confirm:#1064ff;
+.Social{
+    width: 100%;
+        display: flex;
+    .Social-controller{
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+        .ac-title{
+            width: 100%;
+            padding: 2rem 1rem;
+            background-color: #05f;
+            display: flex;
+            .ac-passd{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                .ac-arrowdf{
+                    width: 100%;
+                    border: 2px solid orange;
+                    i{
+                        font-size: 2rem;
+                        color: #fff;
+                    }
+                }
+                .ac-text{
+                    font-size: 1.8rem;
+                    font-family: $Roboto400-900;
+                    font-weight: 600;
+                    color: #fff;
+                    text-transform: capitalize;
+                }
+            }
+        }
+        .Ac-form{
+            display: flex;
+        width: 100%;
+        .form-list{
+            display: flex;
+            padding: 1rem 2rem;
+            width: 100%;
+            flex-direction: column;
+            .form-divide{
+                display: flex;
+    margin: 01.5rem;
+    width: 100%;
+            justify-content: space-between; 
+            .form-left{
+                width: 49%;
+                display: flex;
+                flex-direction: column;
+                .form-label{
+                    font-size: 1.5rem;
+                font-family: $mont400-900;
+                font-weight: 400;
+                }
+                .form-menu{
+                    margin-top: 1rem;
+                    width: 100%;
+                    border: 1px solid #111;
+                    display: flex;
+                    input[type="text"]{
+                        width: 100%;
+                        border: none;
+                        outline: none;
+                        padding: 1.5rem 0;
+                        padding-left: 1.5rem;
+                        font-family: $open400-800;
+                        font-weight: 600;
+                    }
+
+                }
+
+            }
+
+            }
+            .form-item{
+                display: flex;
+        margin: 01.5rem;
+        width: 100%;
+                flex-direction: column;
+                .form-label{
+                    font-size: 1.5rem;
+                font-family: $mont400-900;
+                font-weight: 400;
+                }
+                .form-menu{
+                    margin-top: 1rem;
+                    width: 100%;
+                    overflow: hidden;
+                    border: 1px solid #111;
+                    display: flex;
+                    input[type="text"]{
+                        width: 100%;
+                        border: none;
+                        outline: none;
+                        z-index: -1;
+                        left: -2rem;
+                        border: 2px solid orange;
+                        padding: 1.5rem 0;
+                        padding-left: 1.5rem;
+                        font-family: $open400-800;
+                        font-weight: 600;
+                    }
+
+                }
+            }
+            .form-save{
+                display: flex;
+                margin: 01.5rem;
+                width: 100%;
+                .texo{
+                    width: 20%;
+                    font-size: 1.7rem;
+                    font-family: $Roboto400-900;
+                    background-color: #05f;
+                    color: #fff;
+                    text-align: center;
+                    cursor: pointer;
+                    padding: 1rem 2rem;
+                }
+                .texo:hover{
+                    opacity: 0.9;
+                }
+            }
+        }
+        }
+    }
+}

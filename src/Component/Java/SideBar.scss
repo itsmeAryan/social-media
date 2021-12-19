@@ -1,0 +1,232 @@
+@import '../../Variable.scss';
+
+
+.hd-side.sider{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    .side-manager{
+        width: 100%;
+        height: 62rem;
+        overflow-x: hidden;
+        overflow-y: auto;
+        display: flex;
+        padding-right: 1rem;
+        flex-direction: column;
+        .side-controller{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 0 0.3rem;
+            padding-top: 0.1rem;
+            .new-feed{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                background-color: #fff;
+                margin-bottom: 1rem;
+                border: 1px solid rgb(219, 213, 213);
+                // @include box(0.11rem);
+                border-radius: 1rem;
+                .feed-manager{
+                        width: 100%;
+                    display: flex;
+        
+                    flex-direction: column;
+                    padding: 1.6rem 0.7rem;
+                    .heading-text{
+                        text-transform: capitalize;
+                        font-size: 0.7rem;
+                        font-family: $mont400-900;
+                         font-weight: 500;
+                    }
+                    .feed-controller{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        .feed-icon {
+                            width: 100%;
+                        // border: 2px solid orange;
+                        margin: 1.3rem 0;
+        
+                            display: flex;
+                            a{
+                                width: 100%;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            text-decoration: none;
+                            .feed-text8h{
+                                font-size: 1.5rem;
+                                padding-left: 1rem;
+                                font-family: $mont400-900;
+                                font-weight: 600;
+                                color: $text-color;
+        
+                                text-transform: capitalize;
+                            }
+                              .feed-circle{
+                                  width: 4rem;
+                                  height: 4rem;
+                                  border-radius: 50%;
+                                  background-color: #0960cd;
+                                  display: flex;
+                                  justify-content: center;
+                                  text-align: center;
+                                  i{
+                                      color: #fff;
+                                    align-self: center;
+                                      font-size: 1.7rem;
+                                  }
+                              }
+                            }
+                            a:hover   .feed-text8h{
+                                color: #05f;
+                            }
+                        }
+                    }
+                }
+            }
+            .More-page{
+                @extend .new-feed;
+                .more-controller{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 1.6rem 0.7rem;
+                    .heading-text{
+                        text-transform: capitalize;
+                        font-size: 0.7rem;
+                        font-family: $mont400-900;
+                         font-weight: 500;
+                    }
+                    .more-icon{
+                        width: 100%;
+                        margin: 0.4rem 0;
+                        margin: 1.3rem 0;
+        
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                       .left-icon-mr{
+                           width: 80%;
+                          display: flex;
+                          justify-content:flex-start ;
+                          align-items: center;
+                          .ic-1{
+                            width: 4rem;
+                            height: 4rem;
+                            border-radius: 50%;
+                            background-color: #0960cd;
+                            display: flex;
+                            justify-content: center;
+                            text-align: center;
+                            i{
+                                color: #fff;
+                                    align-self: center;
+                                      font-size: 2rem;
+                            }
+                          }
+                          .ic-text{
+                              font-size: 1.5rem;
+                              text-transform: capitalize;
+                              padding-left: 00.5rem;
+                              font-family: $mont400-900;
+                              font-weight: 600;
+                          }
+                       }
+                       .right-icon{
+                          width: 20%;
+                          display: flex;
+                          align-self: stretch;
+                           .feed-circle{
+                               width: 100%;
+                           display: flex;
+                           justify-content: center;
+                           align-items: center;
+                            .fd-crcle-text{
+                               padding: 0.55rem;
+                               font-size: 1.4rem;
+                               border-radius: 1rem;
+                               background-color: orange;
+                               color: #fff;
+                            }
+                           }
+                       }
+                    }
+                }
+            }
+            .Account-section{
+                @extend .More-page;
+                .Account-controller{
+                    width: 100%;
+                    display: flex;
+                
+                    flex-direction: column;
+                    padding: 1.6rem 0.7rem;
+                    padding-bottom: 0;
+                    .heading-text{
+                        text-transform: capitalize;
+                        font-size: 0.7rem;
+                        font-family: $mont400-900;
+                         font-weight: 500;
+                    }
+                    .ac-icon{
+                        width: 100%;
+                        display: flex;
+                        justify-content:flex-start;
+                        margin: 1.3rem 0;
+                        margin-bottom: 0;
+                        align-items: center;
+                        .ac-text {
+                            padding-left: 1rem;
+                            font-size: 1.6rem;
+                            font-family: $mont400-900;
+                            font-weight: 600;
+                        }
+                        .ac-img {
+                            width: 4rem;
+                            height: 4rem;
+                            border-radius: 50%;
+                            background-color: #0960cd;
+                            display: flex;
+                            justify-content: center;
+                            text-align: center;
+                            i{
+                                color: #fff;
+                                    align-self: center;
+                                      font-size: 1.8rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .side-manager::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.side-manager::-webkit-scrollbar
+{
+	width: 3px;
+	background-color: #F5F5F5;
+}
+
+.side-manager::-webkit-scrollbar-thumb
+{
+	background-color: #706d6d;
+}
+}
+.one-side{
+    width: 26rem;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 1111;
+    
+}
